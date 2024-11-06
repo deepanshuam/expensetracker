@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Corrected "from" to "form" and removed "onclick" -->
+    <form id="userForm">
+      <label for="expense">Choose expense amount</label>
+      <input type="number" id="expense" name="expense" required />
+
+      <label for="description">Choose description</label>
+      <input type="text" id="description" name="description" required />
+
+      <label for="category">Choose a category</label>
+      <select id="category" name="category" required>
+        <option value="">Select a category</option>
+        <option value="plumbing">Plumbing</option>
+        <option value="electrical">Electrical</option>
+        <option value="hvac">HVAC</option>
+        <option value="carpentry">Carpentry</option>
+        <option value="painting">Painting</option>
+        <option value="roofing">Roofing</option>
+        <option value="flooring">Flooring</option>
+      </select>
+
+      <button type="submit">Add Expense</button>
+    </form>
+    <ul></ul>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
